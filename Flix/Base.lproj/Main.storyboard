@@ -82,7 +82,7 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QMe-lh-ccZ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="291"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6OO-tF-dhL">
                                 <rect key="frame" x="16" y="186" width="109" height="165"/>
@@ -115,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0aX-5W-v4G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="1588.1559220389806"/>
+            <point key="canvasLocation" x="969" y="1581"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="FwV-eP-vnZ">
@@ -169,6 +169,7 @@
                                         </view>
                                         <connections>
                                             <outlet property="posterView" destination="O6R-2u-hZe" id="UTl-Fc-GeW"/>
+                                            <segue destination="AAb-FS-VTD" kind="show" id="tKQ-rN-ths"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -229,4 +230,7 @@
         <image name="now_playing_tabbar_item" width="21" height="21"/>
         <image name="superhero_tabbar_item" width="21" height="23"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="tKQ-rN-ths"/>
+    </inferredMetricsTieBreakers>
 </document>
